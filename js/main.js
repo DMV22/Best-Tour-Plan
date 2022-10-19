@@ -1,4 +1,5 @@
-const hotelSlider = new Swiper('.hotel-slider', {
+$(document).ready(function () {
+  const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
@@ -9,9 +10,9 @@ const hotelSlider = new Swiper('.hotel-slider', {
   },
   effect: "coverflow",
   slidesPerView: 1,
-});
+  });
 
-const reviewsSlider = new Swiper('.reviews-slider', {
+  const reviewsSlider = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
 
@@ -22,11 +23,32 @@ const reviewsSlider = new Swiper('.reviews-slider', {
   },
   effect: "coverflow",
   slidesPerView: 1,
-});
+  });
 
-let menuButton = document.querySelector('.menu-button')
-menuButton.addEventListener('click', function () {
-  document
-    .querySelector(".navbar-bottom")
-    .classList.toggle("navbar-bottom--visible")
-})
+  let menuButton = $('.menu-button')
+  menuButton.on('click', function () {
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible")
+  })
+
+  let modalButton = $("[data-toggle=modal]")
+  modalButton.on('click', openModal)
+  let closeModalButton = $(".modal__close")
+  closeModalButton.on('click', closeModal)
+
+  function openModal() {
+    let modalOverlay = $(".modal__overlay")
+    let modalDialog = $(".modal__dialog")
+    modalOverlay.addClass("modal__overlay--visible")
+    modalDialog.addClass("modal__dialog--visible")
+  }
+
+  function closeModal(event) {
+    event.preventDefault()
+    let modalOverlay = $(".modal__overlay")
+    let modalDialog = $(".modal__dialog")
+    modalOverlay.removeClass("modal__overlay--visible")
+    modalDialog.removeClass("modal__dialog--visible")
+  }
+
+
+});

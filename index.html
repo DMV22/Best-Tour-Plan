@@ -235,7 +235,9 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -608,7 +610,7 @@ quest"
               <textarea
                 cols="30"
                 rows="10"
-                class="footer__messeage"
+                class="message footer__message"
                 placeholder="Message"
               ></textarea>
               <div class="footer__button-wrapper">
@@ -631,6 +633,44 @@ quest"
       </div>
       <!-- /.container -->
     </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="./img/close.svg" alt="Icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--mb">Booking</h3>
+        <form action="#" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+          />
+          <input type="text" class="input modal__input" placeholder="Email*" />
+          <textarea
+            cols="30"
+            rows="10"
+            class="message modal__message"
+            placeholder="Message"
+          ></textarea>
+          <div class="modal__button-wrapper">
+            <button class="button modal__button" type="submit">Send</button>
+          </div>
+          <div class="modal__info-wrapper">
+            <span class="modal__info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
