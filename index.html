@@ -338,15 +338,12 @@
                 </div>
                 <!-- /.reviews-slider__profile -->
                 <p class="reviews-slider__text">
-                  It was very nice hotel with cleanliness. Staff behavior was
-                  good and polite. They welcome us very well. Issue was only
-                  that Lift was not in working and we were allotted to 3rd floor
-                  and amenities articles were in corner of gallery which were
-                  giving bad feeling. Breakfast was good and support of the
-                  staff was also very nice. Location is not good as per
-                  atmosphere, it is very nearby most of the popular places but
-                  self location in a narrow street is not good. Overall it was a
-                  good experience and could recommend.
+                  I stayed as a single person for an overnight visit. It was the
+                  perfect size and space for what I needed. Very clean and
+                  comfortable. I originally booked a single, but was upgraded to
+                  a double. I think it would have definitely on the small side
+                  if I were sharing that space it another person, though. The
+                  hotel staff was very kind and accommodating.
                 </p>
               </div>
               <!-- /.reviews-slider__item -->
@@ -373,15 +370,11 @@
                 </div>
                 <!-- /.reviews-slider__profile -->
                 <p class="reviews-slider__text">
-                  It was very nice hotel with cleanliness. Staff behavior was
-                  good and polite. They welcome us very well. Issue was only
-                  that Lift was not in working and we were allotted to 3rd floor
-                  and amenities articles were in corner of gallery which were
-                  giving bad feeling. Breakfast was good and support of the
-                  staff was also very nice. Location is not good as per
-                  atmosphere, it is very nearby most of the popular places but
-                  self location in a narrow street is not good. Overall it was a
-                  good experience and could recommend.
+                  Had a brilliant stay. Lovely hotel in an excellent location.
+                  Rooms are spotless & cleaned daily, breakfast is plentiful.
+                  Staff are very helpful & plenty of restaurants nearby to
+                  experience proper Italian cooking. Would definitely ult hotel
+                  recommend and would certainly stay here again.
                 </p>
               </div>
               <!-- /.reviews-slider__item -->
@@ -596,22 +589,31 @@ quest"
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb">Send us a message</h3>
-            <form action="#" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-              />
+            <form action="#" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 cols="30"
                 rows="10"
                 class="message footer__message"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <div class="footer__button-wrapper">
                 <button class="button footer__button" type="submit">
@@ -641,23 +643,36 @@ quest"
           <img src="./img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb">Booking</h3>
-        <form action="#" class="modal__form">
+        <form action="#" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
+            name="name"
+            required
           />
           <input
-            type="text"
+            id="phone"
+            type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
+            name="phone"
+            required
           />
-          <input type="text" class="input modal__input" placeholder="Email*" />
+          <input
+            id="email"
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
           <textarea
             cols="30"
             rows="10"
             class="message modal__message"
             placeholder="Message"
+            name="message"
           ></textarea>
           <div class="modal__button-wrapper">
             <button class="button modal__button" type="submit">Send</button>
@@ -671,6 +686,8 @@ quest"
     </div>
     <!-- /.modal -->
     <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
