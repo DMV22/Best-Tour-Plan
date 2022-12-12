@@ -59,7 +59,7 @@
       </div>
       <!-- /.container -->
       <div class="navbar-bottom">
-        <div class="container">
+        <nav class="container" id="menu">
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <a
@@ -91,29 +91,28 @@
               </form>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">All Deals</a>
+              <a href="#hotel" class="navbar-menu__link">All Details</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotels</a>
+              <a href="#newsletter" class="navbar-menu__link">Newsletter</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Activities</a>
+              <a href="#reviews" class="navbar-menu__link">Reviews</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+              <a href="#activities" class="navbar-menu__link">Activities</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Restaurants</a>
+              <a href="#packages" class="navbar-menu__link"
+                >Hotel Day Packages</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Events</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Rodrigues</a>
+              <a href="#footer" class="navbar-menu__link">Events</a>
             </li>
           </ul>
           <!-- /.navbar-menu -->
-        </div>
+        </nav>
         <!-- /.container -->
       </div>
       <!-- /.navbar-bottom -->
@@ -134,7 +133,7 @@
       <!-- /.container -->
     </nav>
     <!-- /.breadcrumb -->
-    <section class="hotel">
+    <section class="hotel" id="hotel">
       <div class="container">
         <div class="hotel-info">
           <div class="hotel-info__text">
@@ -285,7 +284,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter">
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
@@ -303,7 +302,7 @@
       <!-- /.newsletter-wrapper -->
     </section>
     <!-- /.newsletter -->
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="container">
         <h2 class="reviews__title">What people think about us</h2>
         <div class="swiper reviews-slider">
@@ -444,7 +443,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="activities">
+    <section class="activities" id="activities">
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
@@ -519,7 +518,283 @@ quest"
       </div>
       <!-- /.container -->
     </section>
-    <footer class="footer">
+    <section class="packages" id="packages">
+      <div class="container">
+        <h3 class="packages__title">Other Packages</h3>
+        <div class="packages-wrapper">
+          <div class="package" data-aos="flip-left" data-aos-duration="2000">
+            <div class="package__photo">
+              <img class="package__image" src="./img/package-1.jpg" alt="" />
+              <span class="offer package__offer">Flash Offer</span>
+            </div>
+            <div class="package__info">
+              <div class="package__rating">
+                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
+                <img src="./img/star.svg" alt="star" />
+              </div>
+              <h3 class="package__title">Hotel Blue Haven</h3>
+              <p class="package__content">
+                Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
+                enim laborum magna llit. Ipsum est fugiat velit ea llamco do
+                esse ut in veniam sun in onsequat. Aute quis duis epteur
+                excepteur ipsum occaecat eiusmod nsectetur enim laborum magna
+                mollit. Ipsum est fugiat velit ea ullamco do
+              </p>
+              <div class="package__room">
+                <div class="package__text">
+                  <img
+                    src="./img/map-pin.svg"
+                    alt="Icon: map"
+                    class="package__icone"
+                  />
+                  <span class="package__description"
+                    >1749 Wheeler Ridge Delaware</span
+                  >
+                </div>
+                <div class="package__text">
+                  <img
+                    src="./img/user.svg"
+                    alt="Icon: user"
+                    class="package__icone"
+                  />
+                  <span class="package__description">2 x Guests</span>
+                </div>
+                <div class="package__text">
+                  <img
+                    src="./img/home.svg"
+                    alt="Icon: home"
+                    class="package__icone"
+                  />
+                  <span class="package__description">1 x Room</span>
+                </div>
+              </div>
+              <div class="package__price">
+                <span class="package__oldPriceTag">$ 10,500</span>
+                <strong class="package__newPriceTag">$ 8,500</strong>
+                <button class="button package__button">Book Now</button>
+              </div>
+            </div>
+            <!-- /.package__info -->
+          </div>
+          <!-- /.package -->
+          <div
+            class="smallpackage"
+            data-aos="flip-left"
+            data-aos-duration="2000"
+          >
+            <div class="smallpackage__photo">
+              <img
+                class="smallpackage__image"
+                src="./img/package-2.jpg"
+                alt=""
+              />
+              <span class="offer smallpackage__offer">Flash Offer</span>
+            </div>
+            <div class="smallpackage__info">
+              <h3 class="smallpackage__title">LUX* Belle Mare</h3>
+              <div class="smallpackage__room">
+                <div class="smallpackage__text">
+                  <img
+                    src="./img/map-pin.svg"
+                    alt="Icon: map"
+                    class="smallpackage__icone"
+                  />
+                  <span class="smallpackage__description"
+                    >1749 Wheeler Ridge Delaware</span
+                  >
+                </div>
+                <div class="smallpackage__text">
+                  <img
+                    src="./img/user.svg"
+                    alt="Icon: user"
+                    class="smallpackage__icone"
+                  />
+                  <span class="smallpackage__description">2 x Guests</span>
+                </div>
+                <div class="smallpackage__text">
+                  <img
+                    src="./img/home.svg"
+                    alt="Icon: home"
+                    class="smallpackage__icone"
+                  />
+                  <span class="smallpackage__description">1 x Room</span>
+                </div>
+              </div>
+              <div class="smallpackage__price">
+                <span class="smallpackage__oldPriceTag">$ 8,500</span>
+                <strong class="smallpackage__newPriceTag">$ 3,000</strong>
+                <button class="button smallpackage__button">Book Now</button>
+              </div>
+            </div>
+            <!-- /.package__info -->
+          </div>
+          <!-- /.smallpackages -->
+          <div
+            class="smallpackage"
+            data-aos="flip-left"
+            data-aos-duration="3000"
+          >
+            <div class="smallpackage__photo">
+              <img
+                class="smallpackage__image"
+                src="./img/package-3.jpg"
+                alt=""
+              />
+              <span class="offer smallpackage__offer">Flash Offer</span>
+            </div>
+            <div class="smallpackage__info">
+              <h3 class="smallpackage__title">White Palace</h3>
+              <div class="smallpackage__room">
+                <div class="smallpackage__text">
+                  <img
+                    src="./img/map-pin.svg"
+                    alt="Icon: map"
+                    class="smallpackage__icone"
+                  />
+                  <span class="smallpackage__description"
+                    >1749 Wheeler Ridge Delaware</span
+                  >
+                </div>
+                <div class="smallpackage__text">
+                  <img
+                    src="./img/user.svg"
+                    alt="Icon: user"
+                    class="smallpackage__icone"
+                  />
+                  <span class="smallpackage__description">2 x Guests</span>
+                </div>
+                <div class="smallpackage__text">
+                  <img
+                    src="./img/home.svg"
+                    alt="Icon: home"
+                    class="smallpackage__icone"
+                  />
+                  <span class="smallpackage__description">1 x Room</span>
+                </div>
+              </div>
+              <div class="smallpackage__price">
+                <span class="smallpackage__oldPriceTag">$ 10,500</span>
+                <strong class="smallpackage__newPriceTag">$ 9,500</strong>
+                <button class="button smallpackage__button">Book Now</button>
+              </div>
+            </div>
+            <!-- /.package__info -->
+          </div>
+          <!-- /.smallpackages -->
+          <div
+            class="smallpackage"
+            data-aos="flip-left"
+            data-aos-duration="2000"
+          >
+            <div class="smallpackage__photo">
+              <img
+                class="smallpackage__image"
+                src="./img/package-4.jpg"
+                alt=""
+              />
+              <span class="offer smallpackage__offer">Flash Offer</span>
+            </div>
+            <div class="smallpackage__info">
+              <h3 class="smallpackage__title">Luxury Place</h3>
+              <div class="smallpackage__room">
+                <div class="smallpackage__text">
+                  <img
+                    src="./img/map-pin.svg"
+                    alt="Icon: map"
+                    class="smallpackage__icone"
+                  />
+                  <span class="smallpackage__description"
+                    >1749 Wheeler Ridge Delaware</span
+                  >
+                </div>
+                <div class="smallpackage__text">
+                  <img
+                    src="./img/user.svg"
+                    alt="Icon: user"
+                    class="smallpackage__icone"
+                  />
+                  <span class="smallpackage__description">2 x Guests</span>
+                </div>
+                <div class="smallpackage__text">
+                  <img
+                    src="./img/home.svg"
+                    alt="Icon: home"
+                    class="smallpackage__icone"
+                  />
+                  <span class="smallpackage__description">1 x Room</span>
+                </div>
+              </div>
+              <div class="smallpackage__price">
+                <span class="smallpackage__oldPriceTag">$ 4,500</span>
+                <strong class="smallpackage__newPriceTag">$ 2,500</strong>
+                <button class="button smallpackage__button">Book Now</button>
+              </div>
+            </div>
+            <!-- /.package__info -->
+          </div>
+          <!-- /.smallpackages -->
+          <div
+            class="smallpackage"
+            data-aos="flip-left"
+            data-aos-duration="3000"
+          >
+            <div class="smallpackage__photo">
+              <img
+                class="smallpackage__image"
+                src="./img/package-5.jpg"
+                alt=""
+              />
+              <span class="offer smallpackage__offer">Flash Offer</span>
+            </div>
+            <div class="smallpackage__info">
+              <h3 class="smallpackage__title">Hotel Five Star</h3>
+              <div class="smallpackage__room">
+                <div class="smallpackage__text">
+                  <img
+                    src="./img/map-pin.svg"
+                    alt="Icon: map"
+                    class="smallpackage__icone"
+                  />
+                  <span class="smallpackage__description"
+                    >1749 Wheeler Ridge Delaware</span
+                  >
+                </div>
+                <div class="smallpackage__text">
+                  <img
+                    src="./img/user.svg"
+                    alt="Icon: user"
+                    class="smallpackage__icone"
+                  />
+                  <span class="smallpackage__description">2 x Guests</span>
+                </div>
+                <div class="smallpackage__text">
+                  <img
+                    src="./img/home.svg"
+                    alt="Icon: home"
+                    class="smallpackage__icone"
+                  />
+                  <span class="smallpackage__description">1 x Room</span>
+                </div>
+              </div>
+              <div class="smallpackage__price">
+                <span class="smallpackage__oldPriceTag">$ 6,500</span>
+                <strong class="smallpackage__newPriceTag">$ 3,500</strong>
+                <button class="button smallpackage__button">Book Now</button>
+              </div>
+            </div>
+            <!-- /.package__info -->
+          </div>
+          <!-- /.smallpackages -->
+        </div>
+        <!-- /.packages-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.packages -->
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-wrapper">
           <img
@@ -672,7 +947,7 @@ quest"
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb">Send us a message</h3>
-            <form action="#" class="footer__form form">
+            <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
                 <input
                   type="text"
@@ -688,6 +963,15 @@ quest"
                   class="input footer__input"
                   placeholder="Phone Number*"
                   name="phone"
+                  required
+                />
+              </div>
+              <div class="footer__input-email">
+                <input
+                  type="email"
+                  class="input footer__input"
+                  placeholder="Email*"
+                  name="email"
                   required
                 />
               </div>
@@ -726,7 +1010,7 @@ quest"
           <img src="./img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb">Booking</h3>
-        <form action="#" class="modal__form form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__input"

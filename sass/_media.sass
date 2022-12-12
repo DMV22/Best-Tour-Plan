@@ -15,6 +15,9 @@
     &__input
       &-group
         flex-basis: 100%
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(2, minmax(min-content, 1fr))
 @media ( max-width: 992px )
   .container, .newsletter-wrapper
     max-width: 700px
@@ -87,6 +90,10 @@
       &-form
         grid-row: 4
         grid-column: span 5
+  .package
+    max-width: 700px
+  .smallpackage
+    flex-basis: 48%
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -221,6 +228,13 @@
     &__input
       &-group
         flex-basis: 100%
+  .packages
+    &__title
+      font-size: 30px
+      line-height: 38px
+  .package
+    &__photo
+      min-width: 273px
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -287,3 +301,16 @@
       flex-direction: column
       justify-content: space-between
       align-items: flex-start
+  .packages
+    &__title
+      font-size: 24px
+      line-height: 32px
+    &-wrapper
+      display: flex
+      flex-direction: column
+  .package
+    &__photo
+      min-width: 150px
+    &__content
+      font-size: 12px
+      line-height: 120%

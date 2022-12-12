@@ -69,6 +69,15 @@ $(document).ready(function () {
     });
   });
 
+  $(document).ready(function(){
+  $("#menu").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+});
+
   $("[name=phone]").mask("+38(999)-999-9999");
 
   AOS.init()

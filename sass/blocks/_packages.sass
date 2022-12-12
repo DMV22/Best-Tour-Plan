@@ -1,0 +1,157 @@
+.packages
+  margin-top: 40px
+  margin-bottom: 70px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(3, minmax(min-content, 1fr))
+    grid-gap: 30px
+    grid-template-rows: repeat(2)
+  &__title
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 65px
+.package
+  grid-column: span 2
+  color: $light
+  background: $dark
+  border-radius: 8px 8px 8px 8px
+  display: flex
+  &__photo
+    flex-basis: 100%
+    position: relative
+    min-width: 366px
+    overflow: hidden
+    border-radius: 8px 0px 0px 8px
+  &__image
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    object-fit: cover
+  &__offer
+    position: absolute
+    font-style: normal
+    font-weight: 600
+    font-size: 12px
+    line-height: 15px
+    border-radius: 0px 4px 4px 0px
+    color: $light
+    background-color: $primary
+    padding: 8px 12px
+    margin-top: 26px
+  &__info
+    padding: 46px 21px 30px 46px
+  &__rating
+    padding-bottom: 5px
+  &__title
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 23px
+    margin: 0
+    padding-bottom: 27px
+  &__content
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 160.6%
+    padding-bottom: 34px
+  &__room
+    padding-bottom: 37px
+  &__text
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    padding-bottom: 11px
+  &__description
+    padding-left: 14px
+  &__price
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &__oldPriceTag
+    flex-basis: 100%
+    font-weight: 400
+    font-size: 14px
+    line-height: 18px
+    text-decoration-line: line-through
+  &__newPriceTag
+    font-style: normal
+    font-weight: 700
+    font-size: 24px
+    line-height: 30px
+
+.smallpackage
+  color: $light
+  background: $dark
+  border-radius: 8px
+  display: flex
+  flex-direction: column
+  &__photo
+    position: relative
+    flex-basis: 100%
+    min-height: 250px
+    overflow: hidden
+    border-radius: 8px 8px 0 0
+  &__image
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    object-fit: cover
+  &__offer
+    position: absolute
+    font-style: normal
+    font-weight: 600
+    font-size: 12px
+    line-height: 15px
+    border-radius: 0px 4px 4px 0px
+    color: $light
+    background-color: $primary
+    padding: 8px 12px
+    margin-top: 26px
+  &__info
+    padding: 30px 21px 30px 46px
+  &__title
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 23px
+    margin: 0
+    padding-bottom: 27px
+  &__room
+    padding-bottom: 37px
+  &__text
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    padding-bottom: 11px
+  &__description
+    padding-left: 14px
+  &__price
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &__oldPriceTag
+    flex-basis: 100%
+    font-weight: 400
+    font-size: 14px
+    line-height: 18px
+    text-decoration-line: line-through
+  &__newPriceTag
+    font-style: normal
+    font-weight: 700
+    font-size: 24px
+    line-height: 30px
